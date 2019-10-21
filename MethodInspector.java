@@ -37,7 +37,7 @@ public class MethodInspector{
 		        }
 
             for (Class throwException : m.getExceptionTypes()) {
-						     System.out.println("Exception Throws: " + throwException.getName());
+			System.out.println("Exception Throws: " + throwException.getName());
 					  }
         }
     }
