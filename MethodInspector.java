@@ -25,7 +25,7 @@ public class MethodInspector extends FieldInspector{
           for(Method m : methods ){
             if(m.getDeclaringClass().equals(obj.getClass())){
               // taken from TA example
-              out.println("   Modifier: "+ Modifier.toString(m.getModifiers())  + " \n   Return Type: "+ m.getReturnType() +   " \n   Name:"  + m.getName() );
+              System.out.println("   Modifier: "+ Modifier.toString(m.getModifiers())  + " \n   Return Type: "+ m.getReturnType() +   " \n   Name:"  + m.getName() );
 			        Parameter[] param = m.getParameters();
 			        out.println("Parameters: " );
 
