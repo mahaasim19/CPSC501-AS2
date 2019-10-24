@@ -7,7 +7,7 @@ import static java.lang.System.out;
 import static java.lang.System.err;
 
 
-public class MethodInspector{
+public class MethodInspector extends FieldInspector{
     Class clz;
   	Constructor constructor;
   	Object obj;
@@ -37,12 +37,12 @@ public class MethodInspector{
 		        }
 
             for (Class throwException : m.getExceptionTypes()) {
-			System.out.println("Exception Throws: " + throwException.getName());
+						     System.out.println("Exception Throws: " + throwException.getName());
 					  }
         }
     }
 
-    private void inspectConstructor(){
+    private void inspectConstructor(Object obj){
 
       System.out.println("Constructor:  ");
       Constructor[] constructor = clz.getConstructors();
