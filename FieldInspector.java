@@ -36,7 +36,6 @@ Class clz;
                       System.out.println("(%s): " + field.getType().getComponentType());
                   }
               }
-
               else{
                   System.out.println("Field: " + field.getName()+" is Primitive");
               }
