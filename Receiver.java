@@ -58,5 +58,5 @@ public class Receiver {
         socket.close();
         serverSocket.close();
     }
-}
+  }
 }
