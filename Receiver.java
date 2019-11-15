@@ -15,7 +15,6 @@ public class Receiver {
         this.host = host;
     }
 
-
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = null;
 
