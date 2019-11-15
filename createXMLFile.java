@@ -25,9 +25,11 @@ public class createXMLFile{
 
           Element element = document.getRootElement();
         }
+            
         catch(Exception e){
           e.printStackTrace();
         }
+            
         catch(IOException ioe){
           ioe.printStackTrace();
         }
