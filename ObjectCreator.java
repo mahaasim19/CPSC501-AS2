@@ -12,7 +12,7 @@ public class ObjectCreator{
       public static SimpleObject SimpleobjectCreator(Object obj){
 
           try{
-
+                
               Object obj = new Object();
               Field[] field = classObj.getFields();
               int i = 0;
