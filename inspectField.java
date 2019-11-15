@@ -47,5 +47,4 @@ private void inspectFields(Object obj, boolean recurisve) throws IllegalAccessEx
               }
         }
     }
-
 }
