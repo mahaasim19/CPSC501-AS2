@@ -38,6 +38,5 @@ public class Sender{
         socket.close();
 
         System.out.println("Connection send");
-
     }
 }
