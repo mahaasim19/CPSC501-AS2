@@ -7,7 +7,7 @@ import java.util.*;
 import org.jdom.*;
 
 
-public class Serializer{
+public abstract class Serializer{
 
   Element fieldElement;
   Element valueElement;
@@ -69,7 +69,7 @@ public class Serializer{
                             i++;
                         }
                         
-						else{
+			else{
                             Element value = new Element("Value");
                             String valueArray = String.valueOf(Array.get(obj, i));
                             ArrayList<Element> ValueArr = new ArrayList<>();
@@ -77,7 +77,6 @@ public class Serializer{
                             ValueArr.add(value);
 
                         }
-
 
                         Field fields[] = obj.getDeclaredFields();
                         for(Fields field : fields){
@@ -93,5 +92,6 @@ public class Serializer{
             return document;
 
       }
+	public abstract inspectField(obj, recursive);
 
 }
